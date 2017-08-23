@@ -3,8 +3,6 @@
 #ifndef RESISTORS_H_
 #define RESISTORS_H_
 
-//#include <string.h>
-
 #define NB_SERIES   4
 #define MAX_ELEMS   576
 

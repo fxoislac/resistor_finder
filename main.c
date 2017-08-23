@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <math.h>       /* pow, log10, ...  */
-#include <stdint.h>
-
 #include "resistors.h"
 
 #define INPUT_LEN 10
