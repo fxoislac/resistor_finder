@@ -70,9 +70,8 @@ int main(int argc, char** argv){
                 printf(" -> value\t%.2lf Ohms\tfound\n", res);
             }
         }
-        //printf("Total combinations found: %d\n\n\n", iFound);
         PRINT_TOTAL(iFound);
-        //iFound = 0;
+
         //Series resistors topo search
         printf("*** Result(s) for double-resistor topography in serie %s: ***\n", serName(eID));
         //loop elems array in struct (reference res)
@@ -87,9 +86,8 @@ int main(int argc, char** argv){
                 }
             }
         }
-        //printf("Total combinations found: %d\n\n\n", iFound);
         PRINT_TOTAL(iFound);
-        //iFound = 0;
+
         //Parallel resistors topo search
         printf("*** Result(s) for double-resistor topography in parallel %s: ***\n", serName(eID));
         //loop elems array in struct (reference res)
@@ -105,9 +103,7 @@ int main(int argc, char** argv){
                 }
             }
         }
-        //printf("Total combinations found: %d\n\n", iFound);
         PRINT_TOTAL(iFound);
-        //iFound = 0;
     }
     return 0;
 }
