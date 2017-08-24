@@ -1,13 +1,12 @@
 CC=gcc
 CFLAGS=-I.
-DEPS = resistors.h output_log.PHONY
-
+DEPS = resistors.h
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-resistor_finder: main.o 
-	gcc -o $@ $^ $(CFLAGS)
+all: main.o 
+	gcc -o resistor_finder $^ $(CFLAGS)
 
 .PHONY: clean
 
